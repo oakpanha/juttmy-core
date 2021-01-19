@@ -1,0 +1,14 @@
+# normal text files should contain a simple LF lineend, the following settings 
+# ensures this even if the user has not set core.autocrlf.
+*  text=auto
+
+# This directory contains email messages verbatim, and changing CRLF to
+# LF will corrupt them.
+test-data/* text=false
+
+# binary files should be detected by git, however, to be sure, you can add them here explicitly
+*.png  binary
+*.jpg  binary
+*.gif  binary
+*.ico  binary
+
